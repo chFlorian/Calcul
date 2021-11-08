@@ -1,5 +1,5 @@
 //
-//  Row5.swift
+//  Row2.swift
 //  Calcul WidgetExtension
 //
 //  Created by florian schweizer on 05.11.21.
@@ -7,37 +7,47 @@
 
 import SwiftUI
 
-struct Row5: View {
+struct Row2: View {
     var body: some View {
         GeometryReader { proxy in
             let size = (proxy.size.width / 5) - 8
             
             HStack {
                 Spacer()
-                Link(destination: URL(string: "asd")!) {
-                    Capsule()
-                        .fill(.gray)
-                        .overlay(Text("0"))
-                }
-                .frame(
-                    width: size * 2 + 8,
-                    height: size
-                )
-                
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/7")!) {
                     Circle()
                         .fill(.gray)
-                        .overlay(Text("."))
+                        .overlay(Text("7"))
                 }
                 .frame(
                     width: size,
                     height: size
                 )
                 
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/8")!) {
+                    Circle()
+                        .fill(.gray)
+                        .overlay(Text("8"))
+                }
+                .frame(
+                    width: size,
+                    height: size
+                )
+                
+                Link(destination: URL(string: "calcul.app/9")!) {
+                    Circle()
+                        .fill(.gray)
+                        .overlay(Text("9"))
+                }
+                .frame(
+                    width: size,
+                    height: size
+                )
+                
+                Link(destination: URL(string: "calcul.app/multiply")!) {
                     Circle()
                         .fill(.orange)
-                        .overlay(Image(systemName: "equal").foregroundColor(.white))
+                        .overlay(Image(systemName: "multiply").foregroundColor(.white))
                 }
                 .frame(
                     width: size,
@@ -46,11 +56,5 @@ struct Row5: View {
                 Spacer()
             }
         }
-    }
-}
-
-struct Row5_Previews: PreviewProvider {
-    static var previews: some View {
-        Row5()
     }
 }

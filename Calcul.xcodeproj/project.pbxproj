@@ -70,6 +70,8 @@
 		04CA0DF8273587DC0005CD05 /* Row3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3.swift; sourceTree = "<group>"; };
 		04CA0DFA2735880B0005CD05 /* Row4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4.swift; sourceTree = "<group>"; };
 		04CA0DFC273588750005CD05 /* Row5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row5.swift; sourceTree = "<group>"; };
+		04CA0DFF27358D6C0005CD05 /* Calcul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calcul.entitlements; sourceTree = "<group>"; };
+		04CA0E0027358D810005CD05 /* Calcul WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Calcul WidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		04CA0DBA27357F8F0005CD05 = {
 			isa = PBXGroup;
 			children = (
+				04CA0E0027358D810005CD05 /* Calcul WidgetExtension.entitlements */,
 				04CA0DC527357F8F0005CD05 /* Calcul */,
 				04CA0DDE273580E50005CD05 /* Calcul Widget */,
 				04CA0DD9273580E50005CD05 /* Frameworks */,
@@ -114,6 +117,7 @@
 		04CA0DC527357F8F0005CD05 /* Calcul */ = {
 			isa = PBXGroup;
 			children = (
+				04CA0DFF27358D6C0005CD05 /* Calcul.entitlements */,
 				04CA0DC627357F8F0005CD05 /* CalculApp.swift */,
 				04CA0DC827357F8F0005CD05 /* ContentView.swift */,
 				04CA0DCA27357F900005CD05 /* Assets.xcassets */,
@@ -155,14 +159,22 @@
 		04CA0DF1273585720005CD05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04CA0DFE27358A7D0005CD05 /* Rows */,
 				04CA0DEF2735817E0005CD05 /* CalculWidgetView.swift */,
-				04CA0DFC273588750005CD05 /* Row5.swift */,
-				04CA0DF8273587DC0005CD05 /* Row3.swift */,
-				04CA0DFA2735880B0005CD05 /* Row4.swift */,
-				04CA0DF42735878D0005CD05 /* Row1.swift */,
-				04CA0DF62735879B0005CD05 /* Row2.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04CA0DFE27358A7D0005CD05 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				04CA0DF42735878D0005CD05 /* Row1.swift */,
+				04CA0DF62735879B0005CD05 /* Row2.swift */,
+				04CA0DF8273587DC0005CD05 /* Row3.swift */,
+				04CA0DFA2735880B0005CD05 /* Row4.swift */,
+				04CA0DFC273588750005CD05 /* Row5.swift */,
+			);
+			path = Rows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +432,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Calcul/Calcul.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Calcul/Preview Content\"";
@@ -450,6 +463,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Calcul/Calcul.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Calcul/Preview Content\"";
@@ -479,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Calcul WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YDE2UY2S5;
@@ -506,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Calcul WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YDE2UY2S5;

@@ -1,5 +1,5 @@
 //
-//  Row3.swift
+//  Row1.swift
 //  Calcul WidgetExtension
 //
 //  Created by florian schweizer on 05.11.21.
@@ -7,47 +7,47 @@
 
 import SwiftUI
 
-struct Row3: View {
+struct Row1: View {
     var body: some View {
         GeometryReader { proxy in
             let size = (proxy.size.width / 5) - 8
             
             HStack {
                 Spacer()
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/c")!) {
                     Circle()
                         .fill(.gray)
-                        .overlay(Text("4"))
+                        .overlay(Text("C"))
                 }
                 .frame(
                     width: size,
                     height: size
                 )
                 
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/plusminus")!) {
                     Circle()
                         .fill(.gray)
-                        .overlay(Text("5"))
+                        .overlay(Image(systemName: "plus.forwardslash.minus"))
                 }
                 .frame(
                     width: size,
                     height: size
                 )
                 
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/percent")!) {
                     Circle()
                         .fill(.gray)
-                        .overlay(Text("6"))
+                        .overlay(Text("%"))
                 }
                 .frame(
                     width: size,
                     height: size
                 )
                 
-                Link(destination: URL(string: "asd")!) {
+                Link(destination: URL(string: "calcul.app/divide")!) {
                     Circle()
                         .fill(.orange)
-                        .overlay(Image(systemName: "minus").foregroundColor(.white))
+                        .overlay(Image(systemName: "divide").foregroundColor(.white))
                 }
                 .frame(
                     width: size,

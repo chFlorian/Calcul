@@ -16,7 +16,7 @@ struct CalculWidgetView : View {
             Spacer()
             HStack {
                 Spacer()
-                Text("0000000")
+                Text(entry.currentValue, format: .number)
                     .font(.title2)
                     .foregroundColor(.white)
             }
@@ -35,7 +35,7 @@ struct CalculWidgetView : View {
 
 struct Calcul_Widget_Previews: PreviewProvider {
     static var previews: some View {
-        CalculWidgetView(entry: SimpleEntry(date: Date()))
+        CalculWidgetView(entry: .preview)
             .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }
